@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Typera",
+    "key": "typera",
+    "thumbnail": "/assets/images/projects/typera.png",
+    "description": "Trợ lý viết được hỗ trợ bởi AI! Hãy sẵn sàng để tăng cường khả năng sáng tạo và năng suất của bạn. Tạo ý tưởng bài đăng blog về các xu hướng mới nổi trong năng lượng tái tạo. Xem lại đoạn này để tìm lỗi ngữ pháp: [chèn đoạn văn].",
+    "link": "https://app.typera.ai",
+    "status": "Finish",
+    "techs": ["reactjs", "tailwindcss", "nodejs", "langchain"]
+  },
+  {
+    "id": 2,
+    "name": "Mappy Social",
+    "thumbnail": "",
+    "key": "mappy-social",
+    "description": "Mạng xã hội dựa trên bản đồ, người dùng có thể chia sẽ những khoảnh khắc của bản thân ngay lập tức ở vị trí hiện tại và mọi người sẽ biết đến bạn. Ứng dụng phục vụ tốt nhất cho các reviewer. Đang được phát triển trên Zalo Mini App",
+    "link": "",
+    "status": "Developing",
+    "techs": []
+  }
+]
