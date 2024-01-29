@@ -43,11 +43,11 @@ export default function Projects() {
               </p>
               <p className="text-xs">{item.description}</p>
               <ul className="flex gap-2 my-2">
-                {item.techs.map((item) => (
-                  <li key={item}>
+                {item.techs.map((i) => (
+                  <li key={i}>
                     <img
-                      src={`/assets/images/${item}.png`}
-                      alt={item}
+                      src={`/assets/images/${i}.png`}
+                      alt={i}
                       className="w-auto h-5"
                     />
                   </li>

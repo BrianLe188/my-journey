@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "date": "27/1/2023",
+    "title": "Khởi tạo dự án và System context diagram",
+    "content": "<h3>System context diagram</h3><div class='flex justify-center'><img src='/assets/images/projects/mappy-social/system-context.drawio.png'/></div>"
+  },
+  {
+    "id": 2,
+    "date": "28/1/2023",
+    "title": "Cài đặt thư viện cần thiết và triển khai UI màn hình chính",
+    "content": "<h3>Khởi tạo dự án</h3><p>1. Tạo thư mục dự án và chạy lệnh</p><div class='code-block'><code>zmp init</code></div><p>2. Nhập <b>Zalo Mini App ID</b> (ID ứng dụng bạn vừa tạo).</p><p>3. Chọn phương thức đăng nhập để xác thực tài khoản.</p><p>4. Sau khi đăng nhập thành công chọn <b>Create a new ZMP project</b>, sau đó làm theo hướng dẫn để cấu hình dự án</p><h3>Màn hình</h3><div class='grid grid-cols-3 gap-3'><img src='/assets/images/projects/mappy-social/main-screen.png' alt='main-screen'/><img src='/assets/images/projects/mappy-social/login-screen.png' alt='main-screen'/><img src='/assets/images/projects/mappy-social/register-screen.png' alt='register-screen'/></div>"
+  }
+]

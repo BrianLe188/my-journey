@@ -8,3 +8,10 @@ export type Project = {
   status: string;
   techs: string[];
 };
+
+export type Timeline = {
+  id: string;
+  date: string;
+  title: string;
+  content: string | null;
+};
