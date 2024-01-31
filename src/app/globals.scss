@@ -30,6 +30,15 @@
       rgba(237, 0, 255, 1) 100%
     );
   }
+
+  .my-bg-gradient-2 {
+    background: rgb(216, 254, 255);
+    background: linear-gradient(
+      148deg,
+      rgba(216, 254, 255, 1) 0%,
+      rgba(255, 231, 254, 1) 100%
+    );
+  }
 }
 
 :root {

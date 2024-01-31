@@ -36,7 +36,7 @@ export default function Timeline() {
                     dangerouslySetInnerHTML={{ __html: item.content }}
                     className="leading-8 timeline"
                   ></div>
-                  <Button className="w-full bg-white text-gray-400 hover:!bg-gray-100">
+                  <Button className="w-full bg-transparent text-gray-400 hover:!bg-gray-100">
                     View more
                   </Button>
                 </div>

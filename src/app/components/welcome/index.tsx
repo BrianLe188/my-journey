@@ -4,10 +4,7 @@ import HiveGrid from "@/components/hive-grid";
 
 export default function Welcome() {
   return (
-    <section className="h-auto md:h-screen bg-gray-100">
-      <div className="absolute w-screen top-14">
-        <HiveGrid blocks={20} />
-      </div>
+    <section className="h-auto md:h-screen">
       <div className="container container-padding relative z-40">
         <div className="flex flex-col md:flex-row md:justify-between">
           <div className="flex items-center">
