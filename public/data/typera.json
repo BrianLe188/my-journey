@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "date": "10/4/2023",
+    "title": "Khởi tạo dự án và System context diagram",
+    "content": "<h3>System context diagram</h3><h4>1. Chatbot system context</h4><div class='flex justify-center'><img src='/assets/images/projects/typera/chatbot-sys-ctx.png'/></div><h4>2. Chat with file system context</h4><div class='flex justify-center'><img src='/assets/images/projects/typera/chatfile-sys-ctx.drawio.png'/></div><h4>3. Generate content from template system context</h4><div class='flex justify-center'><img src='/assets/images/projects/typera/generate-content-sys-ctx.drawio.png'/></div>"
+  },
+  {
+    "id": 2,
+    "date": "13/4/2023",
+    "title": "Hoàn thiện UI cho trang chính, đăng nhập",
+    "content": "<h3>UI trang chính</h3><div class='flex justify-center'><img src='/assets/images/projects/typera/main-page.png'/></div><div><p>Trang chính gồm có 3 phần từ trái sang phải:</p><p>1. Side bar:</p><p class='pl-3'>Hiển thị các tools được setup bởi admin. Mỗi tool sẽ có các field (trong phần 2) khác nhau và đồng thời mục đích của nó cũng khác nhau. Người dùng có thể chọn một tool bất kỳ phù hợp với nhu cầu.</p><p>2. Form nhập liệu:</p><p class='pl-3'>Sau khi người dùng đã chọn tool, hệ thống sẽ hiển thị các field. Ở đây người dùng cần điền thông tin (bắt buộc hoặc không) và gửi câu trả lời của mình.</p><p>3. Các kết quả được hệ thống gợi ý:</p><p class='pl-3'>Khi nhận được câu trả lời từ phía người dùng, hệ thống sẽ bắt đầu xữ lý để đưa ra các gợi ý phù hợp (tối đa 5 gợi ý/1 lần, có thể click vào xem thêm).</p><p class='pl-3'>Đặc biệt chúng ta có thể tiếp tục xem các gợi ý mới bằng cách chọn gợi ý hiện tại và yêu cầu xem thêm, thì những kết quả sau sẽ được tạo ra có sự liên quan đến gợi ý vừa chọn.</p></div>"
+  }
+]

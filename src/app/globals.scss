@@ -79,6 +79,9 @@ body {
     border-radius: 10px;
     padding: 0.5rem;
   }
+  h4:not(:nth-child(1)) {
+    margin-top: 0.625rem;
+  }
 }
 
 @layer utilities {
@@ -170,5 +173,14 @@ $grid-cell-height: ($block-size * 2) * 80 /100 + px;
         grid-column: 2 / span 2;
       }
     }
+  }
+}
+
+.chat-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }

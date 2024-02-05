@@ -17,7 +17,7 @@ export default function Navbar() {
         <FlowNavbar.Link href="/" className="hover:!my-text-gradient">
           Home
         </FlowNavbar.Link>
-        <FlowNavbar.Link href="#" className="hover:!my-text-gradient">
+        <FlowNavbar.Link href="/resume" className="hover:!my-text-gradient">
           Resume
         </FlowNavbar.Link>
         <FlowNavbar.Link href="#" className="hover:!my-text-gradient">
