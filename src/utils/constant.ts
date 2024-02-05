@@ -1,11 +1,18 @@
 import type { Message } from "./types";
 
-export const firstAssistantMessage: Message = {
-  _id: "the_first_message",
-  type: "ai",
-  message:
-    'Xin chào! Tôi là <b>"Trợ lý AI của Việt Anh"</b>. Bạn có thể hỏi bất kỳ về thông tin và tuyển dụng, những câu trả lời đã được cậu ấy duyệt rồi bạn nhé.',
-};
+export const firstAssistantMessage: Message[] = [
+  {
+    _id: "the_first_message",
+    type: "ai",
+    message:
+      'Xin chào! Tôi là <b>"Trợ lý AI của Việt Anh"</b>. Những câu trả lời đã được cậu ấy duyệt rồi bạn nhé.',
+  },
+  {
+    _id: "the_second_message",
+    type: "ai",
+    message: `<p>Ví du:</p><ul><li>- Bạn hãy giới thiệu một chút về bản thân?</li><li>- Bạn có bao nhiêu năm kinh nghiệm rồi?</li><li>- Những dự án mà bạn đã và đang làm là gì?</li></ul>`,
+  },
+];
 
 export const QA_PROMPT = `You are a helpful AI assistant. Use the following pieces of context to answer the question at the end.
 If you don't know the answer, just say you don't know and please send email to anhkun123456@gmail.com. DO NOT try to make up an answer.

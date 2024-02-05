@@ -21,11 +21,14 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="container mt-3">
+    <section
+      id="projects"
+      className="container mt-3 container-padding pt-5 lg:pt-0"
+    >
       <div className="relative z-40">
         <h2 className="font-bold text-3xl my-text-gradient">Projects</h2>
         <hr className="my-3" />
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {projects.map((item) => (
             <div
               key={item.id}

@@ -1,3 +1,4 @@
+"use client";
 import Footer from "./components/footer";
 import Projects from "./components/projects";
 import Welcome from "./components/welcome";

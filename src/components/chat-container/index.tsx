@@ -47,18 +47,21 @@ export default function ChatContainer() {
   return (
     <div
       className={twMerge(
-        "fixed z-40 right-10 bottom-20 bg-white shadow-lg p-3 rounded-tr-[7rem] rounded-tl-md rounded-bl-3xl h-[30rem] w-[25rem] duration-500 transition-all border overflow-hidden chat-container",
-        !showChatWithAI && "h-0 w-0 bottom-6 right-6"
+        "fixed z-40 right-10 bottom-20 bg-white shadow-lg p-3 rounded-tr-[7rem] rounded-tl-md rounded-bl-3xl w-4/5 h-96 md:h-[30rem] md:w-[25rem] duration-500 transition-all border overflow-hidden chat-container",
+        !showChatWithAI && "h-0 w-0 md:h-0 md:w-0 bottom-6 right-6"
       )}
     >
       {showChatWithAI && (
         <section className="flex flex-col relative h-full">
           <ScrollToBottom className="flex flex-col h-5/6 overflow-y-auto">
-            {messages.map((item) => (
+            {messages.map((item, index) => (
               <div key={item._id} className="mt-4 first:mt-0">
                 <Message
                   type={item.type as MessageType}
                   content={item.message}
+                  showIcon={
+                    index >= 1 ? item.type !== messages[index - 1].type : true
+                  }
                 />
               </div>
             ))}

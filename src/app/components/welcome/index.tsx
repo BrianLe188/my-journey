@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { GithubIcon, LinkedinIcon } from "@/assets/icons";
-import HiveGrid from "@/components/hive-grid";
 
 export default function Welcome() {
   return (
-    <section className="h-auto md:h-screen">
+    <section className="h-auto lg:h-screen">
       <div className="container container-padding relative z-40">
         <div className="flex flex-col md:flex-row md:justify-between">
           <div className="flex items-center">
@@ -49,32 +48,36 @@ export default function Welcome() {
             </div>
           </div>
         </div>
-        <div className="flex gap-3 justify-center mt-4">
+        <div className="flex gap-3 justify-center mt-5 md:mt-10 lg:mt-20">
           <img
             src="/assets/images/js.png"
             alt="js"
-            className="w-auto h-16 rounded-md"
+            className="w-auto h-10 md:h-12 lg:h-16 rounded-md"
           />
-          <img src="/assets/images/ts.png" alt="ts" className="w-auto h-16" />
+          <img
+            src="/assets/images/ts.png"
+            alt="ts"
+            className="w-auto h-10 md:h-12 lg:h-16"
+          />
           <img
             src="/assets/images/nodejs.png"
             alt="nodejs"
-            className="w-auto h-16"
+            className="w-auto h-10 md:h-12 lg:h-16"
           />
           <img
             src="/assets/images/reactjs.png"
             alt="reactjs"
-            className="w-auto h-16"
+            className="w-auto h-10 md:h-12 lg:h-16"
           />
           <img
             src="/assets/images/nextjs.png"
             alt="nextjs"
-            className="w-auto h-16"
+            className="w-auto h-10 md:h-12 lg:h-16"
           />
           <img
             src="/assets/images/tailwindcss.png"
             alt="tailwindcss"
-            className="w-auto h-16 rounded-md"
+            className="w-auto h-10 md:h-12 lg:h-16 rounded-md"
           />
         </div>
       </div>

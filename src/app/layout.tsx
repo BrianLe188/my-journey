@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
+import "./loading.scss";
 import "react-toastify/dist/ReactToastify.css";
 import { ThemeModeScript } from "flowbite-react";
 import Navbar from "@/components/navbar";

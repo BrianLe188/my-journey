@@ -14,21 +14,21 @@ export default function Navbar() {
       </FlowNavbar.Brand>
       <FlowNavbar.Toggle />
       <FlowNavbar.Collapse>
-        <FlowNavbar.Link href="/" className="hover:!my-text-gradient">
+        <Link href="/" className="hover:!my-text-gradient">
           Home
-        </FlowNavbar.Link>
-        <FlowNavbar.Link href="/resume" className="hover:!my-text-gradient">
+        </Link>
+        <Link href="/resume" className="hover:!my-text-gradient">
           Resume
-        </FlowNavbar.Link>
-        <FlowNavbar.Link href="#" className="hover:!my-text-gradient">
+        </Link>
+        <Link href="#" className="hover:!my-text-gradient">
           Services
-        </FlowNavbar.Link>
-        <FlowNavbar.Link href="/projects" className="hover:!my-text-gradient">
+        </Link>
+        <Link href="/projects" className="hover:!my-text-gradient">
           Projects
-        </FlowNavbar.Link>
-        <FlowNavbar.Link href="#" className="hover:!my-text-gradient">
+        </Link>
+        <Link href="#" className="hover:!my-text-gradient">
           Contact
-        </FlowNavbar.Link>
+        </Link>
       </FlowNavbar.Collapse>
     </FlowNavbar>
   );

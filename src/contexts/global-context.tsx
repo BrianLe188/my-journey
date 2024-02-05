@@ -8,6 +8,7 @@ import type {
   MessageType,
 } from "@/utils/types";
 import { firstAssistantMessage } from "@/utils/constant";
+import PageLoading from "@/components/page-loading";
 
 export const GlobalContext = createContext({
   showChatWithAI: false,
@@ -21,6 +22,8 @@ export const GlobalContext = createContext({
     t: MessageType,
     k: keyof AssistantConversation
   ) => {},
+  theFirstAccess: true,
+  handleToggleTheFirstAccess: () => {},
 });
 
 export default function GlobalContextProvider({
@@ -32,12 +35,22 @@ export default function GlobalContextProvider({
   const [assistantConversation, setAssistantConversation] =
     useState<AssistantConversation>({
       histories: [],
-      messages: [firstAssistantMessage],
+      messages: [...firstAssistantMessage],
     });
+  const [theFirstAccess, setTheFirstAccess] = useState(true);
 
   useEffect(() => {
-    init();
+    // init();
+    const pageLoadingTimeout = setTimeout(() => setTheFirstAccess(false), 4500);
+
+    return () => {
+      clearTimeout(pageLoadingTimeout);
+    };
   }, []);
+
+  function handleToggleTheFirstAccess() {
+    setTheFirstAccess((state) => !state);
+  }
 
   function handleAddMessageIntoConversation(
     message: string,
@@ -54,6 +67,10 @@ export default function GlobalContextProvider({
     setShowChatWithAI((state) => !state);
   }
 
+  if (theFirstAccess) {
+    return <PageLoading />;
+  }
+
   return (
     <GlobalContext.Provider
       value={{
@@ -61,6 +78,8 @@ export default function GlobalContextProvider({
         handleToggleChatWithAI,
         assistantConversation,
         handleAddMessageIntoConversation,
+        theFirstAccess,
+        handleToggleTheFirstAccess,
       }}
     >
       {children}

@@ -4,9 +4,11 @@ import { twMerge } from "tailwind-merge";
 export default function Message({
   type,
   content,
+  showIcon = true,
 }: {
   type: "ai" | "human";
   content: string;
+  showIcon: boolean;
 }) {
   return (
     <div
@@ -15,7 +17,7 @@ export default function Message({
       <img
         src={type === "ai" ? "/assets/images/AI.png" : "/assets/images/man.png"}
         alt={type}
-        className="w-10 h-10 rounded-full"
+        className={twMerge("w-10 h-10 rounded-full", !showIcon && "invisible")}
       />
       <div
         className={twMerge(
