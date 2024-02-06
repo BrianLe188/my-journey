@@ -5,6 +5,13 @@ import Link from "next/link";
 import { Navbar as FlowNavbar } from "flowbite-react";
 
 export default function Navbar() {
+  function scrollToSection(sectionId: string) {
+    var element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" }); // Cuộn mượt mà
+    }
+  }
+
   return (
     <FlowNavbar fluid rounded className="fixed w-full top-0 shadow-md z-50">
       <FlowNavbar.Brand as={Link} href="/">
@@ -20,15 +27,18 @@ export default function Navbar() {
         <Link href="/resume" className="hover:!my-text-gradient">
           Resume
         </Link>
-        <Link href="#" className="hover:!my-text-gradient">
-          Services
-        </Link>
-        <Link href="/projects" className="hover:!my-text-gradient">
+        <p
+          onClick={() => scrollToSection("projects")}
+          className="hover:!my-text-gradient cursor-pointer"
+        >
           Projects
-        </Link>
-        <Link href="#" className="hover:!my-text-gradient">
+        </p>
+        <p
+          onClick={() => scrollToSection("contact")}
+          className="hover:!my-text-gradient cursor-pointer"
+        >
           Contact
-        </Link>
+        </p>
       </FlowNavbar.Collapse>
     </FlowNavbar>
   );

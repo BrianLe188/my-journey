@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 export default function Footer() {
   return (
-    <section>
+    <footer>
       <div className="container container-padding relative z-40 pb-10">
         <div className="grid grid-cols-2 mb-10">
           <div>
@@ -48,6 +48,6 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

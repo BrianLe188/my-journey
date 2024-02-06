@@ -72,18 +72,18 @@
 
 @media screen and (max-width: 768px) {
   #loader-container {
-    max-width: 150px;
+    max-width: 70%;
   }
   #loader {
-    width: 150px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 650px) {
   #loader-container {
-    max-width: 100px;
+    max-width: 50%;
   }
   #loader {
-    width: 100px;
+    width: 100%;
   }
 }

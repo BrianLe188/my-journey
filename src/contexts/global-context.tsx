@@ -40,7 +40,7 @@ export default function GlobalContextProvider({
   const [theFirstAccess, setTheFirstAccess] = useState(true);
 
   useEffect(() => {
-    // init();
+    init();
     const pageLoadingTimeout = setTimeout(() => setTheFirstAccess(false), 4500);
 
     return () => {
