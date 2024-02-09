@@ -11,47 +11,47 @@ export const MyName = ({ id }: { id?: string }) => (
       <path
         d="M545.486 79V81.5H547.986H556.89H559.39V79V48.4023H593.596V79V81.5H596.096H605H607.5V79V5V2.5H605H596.096H593.596V5V35.4531H559.39V5V2.5H556.89H547.986H545.486V5V79Z"
         stroke="url(#paint0_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M532.669 5V2.5H530.169H521.409H518.909V5V56.2646L482.537 3.57967L481.791 2.5H480.479H471.862H469.362V5V79V81.5H471.862H480.766H483.266V79V27.886L519.494 80.4193L520.239 81.5H521.552H530.169H532.669V79V5Z"
         stroke="url(#paint1_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M406.555 81.5H408.324L408.912 79.8316L415.716 60.543H441.913L448.717 79.8316L449.305 81.5H451.075H460.409H463.983L462.758 78.1431L435.759 4.14312L435.159 2.5H433.41H424.219H422.47L421.87 4.14312L394.871 78.1431L393.647 81.5H397.22H406.555ZM428.815 23.4083L437.346 47.5938H420.284L428.815 23.4083Z"
         stroke="url(#paint2_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M303.715 12.9492V15.4492H306.215H326.836V79V81.5H329.336H338.24H340.74V79V15.4492H361.362H363.862V12.9492V5V2.5H361.362H306.215H303.715V5V12.9492Z"
         stroke="url(#paint3_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M247.311 79V81.5H249.811H294.762H297.262V79V71.0508V68.5508H294.762H261.215V48.4023H291.889H294.389V45.9023V37.9531V35.4531H291.889H261.215V15.4492H294.187H296.687V12.9492V5V2.5H294.187H249.811H247.311V5V79Z"
         stroke="url(#paint4_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M234.458 5V2.5H231.958H223.054H220.554V5V79V81.5H223.054H231.958H234.458V79V5Z"
         stroke="url(#paint5_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M160.106 4.17323L159.519 2.5H157.746H148.412H144.838L146.063 5.85688L173.062 79.8569L173.662 81.5H175.411H184.602H186.351L186.951 79.8569L213.95 5.85688L215.174 2.5L211.601 2.5H202.266H200.493L199.907 4.17323L180.006 60.9629L160.106 4.17323Z"
         stroke="url(#paint6_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M63.3705 79V81.5H65.8705H110.821H113.321V79V71.0508V68.5508H110.821H77.2745V48.4023H107.949H110.449V45.9023V37.9531V35.4531H107.949H77.2745V15.4492H110.247H112.747V12.9492V5V2.5H110.247H65.8705H63.3705V5V79Z"
         stroke="url(#paint7_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M6.5 79V81.5H9H52.0837H54.5837V79V71.0508V68.5508H52.0837H20.404V5V2.5H17.904H9H6.5V5V79Z"
         stroke="url(#paint8_linear_1_4)"
-        stroke-width="5"
+        strokeWidth="5"
       />
     </g>
     <defs>
@@ -62,9 +62,9 @@ export const MyName = ({ id }: { id?: string }) => (
         width="614"
         height="92"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -98,8 +98,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1_4"
@@ -109,8 +109,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_1_4"
@@ -120,8 +120,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_1_4"
@@ -131,8 +131,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_1_4"
@@ -142,8 +142,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_1_4"
@@ -153,8 +153,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
       <linearGradient
         id="paint6_linear_1_4"
@@ -164,8 +164,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
       <linearGradient
         id="paint7_linear_1_4"
@@ -175,8 +175,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
       <linearGradient
         id="paint8_linear_1_4"
@@ -186,8 +186,8 @@ export const MyName = ({ id }: { id?: string }) => (
         y2="79"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#0C00D6" />
-        <stop offset="1" stop-color="#C700FF" />
+        <stop stopColor="#0C00D6" />
+        <stop offset="1" stopColor="#C700FF" />
       </linearGradient>
     </defs>
   </svg>

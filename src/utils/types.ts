@@ -36,3 +36,17 @@ export type AssistantConversation = {
 };
 
 export type MyToastType = "success" | "danger" | "warn";
+
+export type SendMailParams = {
+  from: string;
+  to?: string;
+  subject: string;
+  text?: string;
+  html?: string;
+};
+
+export type Request = {
+  body?: Record<string, any>;
+  params?: Record<string, any>;
+  query?: Record<string, any>;
+};

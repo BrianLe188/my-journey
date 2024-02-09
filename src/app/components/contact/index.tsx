@@ -1,11 +1,11 @@
 import { Button, TextInput, Textarea } from "flowbite-react";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Contact() {
   const [formValue, setFormValue] = useState({
     subject: "",
-    email: "",
-    content: "",
+    text: "",
   });
 
   function handleChange(key: keyof typeof formValue, value: string) {
@@ -13,10 +13,6 @@ export default function Contact() {
       ...state,
       [key]: value,
     }));
-  }
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
   }
 
   return (
@@ -36,28 +32,25 @@ export default function Contact() {
           </div>
           <div>
             <p>Nếu có bất kỳ câu hỏi nào. Vui lòng gửi mail cho mình nhé!</p>
-            <form onSubmit={handleSubmit} className="mt-6">
+            <div className="mt-6">
               <TextInput
                 placeholder="Nhập tiêu đề"
                 className="mb-4"
                 value={formValue.subject}
                 onChange={(e) => handleChange("subject", e.target.value)}
               />
-              <TextInput
-                placeholder="Nhập email của bạn"
-                className="mb-4"
-                type="email"
-                value={formValue.email}
-                onChange={(e) => handleChange("email", e.target.value)}
-              />
               <Textarea
                 placeholder="Nhập nội dung"
                 className="mb-4"
-                value={formValue.content}
-                onChange={(e) => handleChange("content", e.target.value)}
+                value={formValue.text}
+                onChange={(e) => handleChange("text", e.target.value)}
               />
-              <Button type="submit">Gửi</Button>
-            </form>
+              <Link
+                href={`mailto:anhkun123456@gmail.com?subject=${formValue.subject}&body=${formValue.text}`}
+              >
+                <Button className="my-bg-gradient w-full">Gửi</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
