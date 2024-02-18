@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
 /* eslint-disable @next/next/no-img-element */
@@ -7,7 +8,7 @@ export default function Message({
   showIcon = true,
 }: {
   type: "ai" | "human";
-  content: string;
+  content: string | ReactNode;
   showIcon: boolean;
 }) {
   return (
@@ -26,10 +27,14 @@ export default function Message({
           type === "ai" ? "my-bg-gradient-2" : "bg-gray-50 border"
         )}
       >
-        <div
-          className="text-xs"
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
+        {typeof content === "string" ? (
+          <div
+            className="text-xs"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
+        ) : (
+          content
+        )}
       </div>
     </div>
   );

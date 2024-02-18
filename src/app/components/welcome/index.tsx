@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { GithubIcon, LinkedinIcon } from "@/assets/icons";
+import { MY_NAME_VN, MY_ROLE } from "@/configs/infor";
 
 export default function Welcome() {
   return (
@@ -12,10 +13,10 @@ export default function Welcome() {
                 Hello
               </h1>
               <h1 className="font-bold text-5xl mb-2 w-fit pb-1">
-                Mình là <span className="my-text-gradient">Lê Việt Anh</span>{" "}
+                Mình là <span className="my-text-gradient">{MY_NAME_VN}</span>{" "}
                 đây
               </h1>
-              <h2 className="font-semibold text-4xl">Web Developer</h2>
+              <h2 className="font-semibold text-4xl">{MY_ROLE}</h2>
               <p className="mt-2">
                 Một developer với đam mê ghi lại và chia sẽ quá trình của các dự
                 án

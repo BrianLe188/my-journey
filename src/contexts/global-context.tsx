@@ -9,6 +9,7 @@ import type {
 } from "@/utils/types";
 import { firstAssistantMessage } from "@/utils/constant";
 import PageLoading from "@/components/page-loading";
+import { v4 } from "uuid";
 
 export const GlobalContext = createContext({
   showChatWithAI: false,
@@ -57,9 +58,10 @@ export default function GlobalContextProvider({
     type: MessageType,
     key: keyof AssistantConversation
   ) {
+    const _id = v4();
     setAssistantConversation((state) => ({
       ...state,
-      [key]: [...state[key], { message, type }],
+      [key]: [...state[key], { _id, message, type }],
     }));
   }
 

@@ -9,6 +9,7 @@ import { SendIcon } from "@/assets/icons";
 import ScrollToBottom from "react-scroll-to-bottom";
 import { fullChain } from "@/utils/pinecone";
 import { toast } from "react-toastify";
+import Loading from "../loading";
 
 export default function ChatContainer() {
   const {
@@ -17,6 +18,7 @@ export default function ChatContainer() {
     handleAddMessageIntoConversation,
   } = useContext(GlobalContext);
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   function handleSubmitMessage(message: string) {
     const trimmedMessage = message.trim();
@@ -29,6 +31,7 @@ export default function ChatContainer() {
 
   async function handleSendMessageToAssistant(question: string) {
     try {
+      setLoading(true);
       const answer = await fullChain.call({
         question,
         chat_history: histories.join("\n") || [],
@@ -41,6 +44,8 @@ export default function ChatContainer() {
     } catch (error) {
       console.log(error);
       toast.error("Đã xãy ra sự cố gì đó, vui lòng thông cảm ạ!");
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -65,6 +70,11 @@ export default function ChatContainer() {
                 />
               </div>
             ))}
+            {loading && (
+              <div className="mt-4 first:mt-0">
+                <Message type={"ai"} content={<Loading />} showIcon />
+              </div>
+            )}
           </ScrollToBottom>
           <div className="absolute bottom-0 w-full flex gap-3 items-center p-2">
             <input

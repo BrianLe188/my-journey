@@ -28,7 +28,7 @@ export default function RootLayout({
       <head>
         <ThemeModeScript />
       </head>
-      <body className={`${inter.className} bg-white`}>
+      <body className={`${inter.className} bg-[#fbfbfb]`}>
         <GlobalContextProvider>
           <div className="my-bg-gradient-2 h-[45rem] w-[45rem] rounded-full fixed opacity-50 -left-40"></div>
           <div className="my-bg-gradient-2 h-[45rem] w-[45rem] rounded-full fixed opacity-50 -right-40 -bottom-80"></div>
