@@ -1,7 +1,7 @@
 import { Button, TextInput, Textarea } from "flowbite-react";
 import { useState } from "react";
 import Link from "next/link";
-import { MY_EMAIL, MY_PHONE } from "@/configs/infor";
+import { MY_EMAIL, MY_PHONE } from "@/utils/constant";
 
 export default function Contact() {
   const [formValue, setFormValue] = useState({

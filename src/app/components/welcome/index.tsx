@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { GithubIcon, LinkedinIcon } from "@/assets/icons";
-import { MY_NAME_VN, MY_ROLE } from "@/configs/infor";
+import { MY_NAME_VN, MY_ROLE } from "@/utils/constant";
 
 export default function Welcome() {
   return (

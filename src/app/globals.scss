@@ -184,3 +184,10 @@ $grid-cell-height: ($block-size * 2) * 80 /100 + px;
     display: none;
   }
 }
+
+#resume {
+  p,
+  li {
+    line-height: 1.25rem !important;
+  }
+}
