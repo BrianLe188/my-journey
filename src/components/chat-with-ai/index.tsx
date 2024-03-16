@@ -16,7 +16,7 @@ export default function ChatWithAI() {
         {!showChatWithAI ? (
           <div className="flex gap-2 items-center">
             <ChatIcon />
-            <p>Hỏi trợ lý AI</p>
+            <p className="!text-white">Hỏi trợ lý AI</p>
           </div>
         ) : (
           <ChatIcon />

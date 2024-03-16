@@ -22,7 +22,7 @@ export default function Message({
       />
       <div
         className={twMerge(
-          "max-w-[75%] rounded-xl p-2",
+          "max-w-[75%] rounded-xl p-2 !text-black",
           type === "ai" ? "rounded-tr-3xl" : "rounded-tl-3xl",
           type === "ai" ? "my-bg-gradient-2" : "bg-gray-50 border"
         )}

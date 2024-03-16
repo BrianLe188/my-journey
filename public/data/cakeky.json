@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "date": "25/2/2024",
+    "title": "Lên ý tưởng dự án, và xác định công nghệ sẽ sử dụng",
+    "content": ""
+  },
+  {
+    "id": 2,
+    "date": "25/2/2024",
+    "title": "Xác định các chức năng",
+    "content": "<div><p>Team sẽ chia dự án thành nhiều giai đoạn, đi từ những chức năng cơ bản cần phải nhằm tạo cấu trúc đơn giản từ đó phát triển lên.</p><p>Liệt kê các chức năng sẽ có trong version 1:</p><img src='/assets/images/projects/cakeky/mindmap.jpg'/></div>"
+  },
+  {
+    "id": 3,
+    "date": "26/2/2024",
+    "title": "Vẽ flowchart cho các chức năng",
+    "content": "<div><p>Từ những gì được liệt kê, tiến hành chọn chức năng phức tạp đễ vẽ flowchart.</p><p>Việc team dành thời gian cho flowchart để nhằm cho mọi người phải hiểu luồng của chức năng. Từ đó designer có thể hình ảnh hoá ý tưởng.</p><p><b>Chức năng đặt bánh theo yêu cầu</b></p><img src='/assets/images/projects/cakeky/Flowchart-CUSTOMER-Custom-order.drawio.png'/><p style='margin-top: 10px'><b>Chức năng đặt bánh có sẵn</b></p><img src='/assets/images/projects/cakeky/Flowchart-CUSTOMER-Addorder(Bookacake).drawio.png'/><p style='margin-top: 10px'><b>Chức năng thêm bánh mới cho shop</b></p><img src='/assets/images/projects/cakeky/Flowchart-SHOP-Createcake(uploadproduct).drawio.png'/></div>"
+  },
+  {
+    "id": 4,
+    "date": "2/3/2024",
+    "title": "Tạo quản lý dự án, và chia việc",
+    "content": "<div><p>Để đơn giản cho việc quản lý nhanh và gọn, team quyết định dùng Trello để quản lý công việc của thành viên</p><p style='font-size: 10px'>(Hình ảnh được chụp sau này)</p><img src='/assets/images/projects/cakeky/trello.png'/></div>"
+  },
+  {
+    "id": 5,
+    "date": "3/3/2024",
+    "title": "Design các màn hình",
+    "content": "<div><a target='_blank' href='https://www.figma.com/file/KuRjlPiUhNZuO23TgBb69Y/App?type=design&node-id=0-1&mode=design&t=AyvtjgWL5R4iM2Nx-0'><img src='/assets/images/projects/cakeky/figma.png'/></a></div>"
+  },
+  {
+    "id": 6,
+    "date": "10/3/2024",
+    "title": "Design database",
+    "content": "<div><p>Team cùng nhau phân tích và thiết kế database dựa trên những yêu cầu chức năng có sẵn</p><img src='/assets/images/projects/cakeky/database.png'/></div>"
+  }
+]

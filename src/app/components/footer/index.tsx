@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-bold">Giới thiệu</h4>
-            <p className="mt-2">
+            <p className="mt-2 dark:!text-white">
               Phát triển bởi Lê Việt Anh vào năm 2024, là blog cá nhân chia sẻ
               quá trình phát triển dự án. Những dự án được ghi chép lại như một
               nhật ký để tích luỹ kinh nghiệm.

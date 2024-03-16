@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p,
+  a,
+  li,
+  h4,
+  h1,
+  h2 {
+    color: black !important;
+  }
+
+  html {
+    background-color: #fbfbfb !important;
+  }
+}
+
 @layer components {
   .container {
     max-width: 62.5rem;

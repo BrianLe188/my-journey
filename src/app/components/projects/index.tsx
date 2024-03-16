@@ -24,6 +24,9 @@ export default function Projects() {
     <section
       id="projects"
       className="container mt-3 container-padding pt-5 lg:pt-0"
+      style={{
+        scrollMarginTop: "100px",
+      }}
     >
       <div className="relative z-40">
         <h2 className="font-bold text-3xl my-text-gradient">Projects</h2>

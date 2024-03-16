@@ -11,12 +11,12 @@
   },
   {
     "id": 2,
-    "name": "Mappy Social",
+    "name": "Cakeky",
     "thumbnail": "",
-    "key": "mappy-social",
-    "description": "Mạng xã hội dựa trên bản đồ, người dùng có thể chia sẽ những khoảnh khắc của bản thân ngay lập tức ở vị trí hiện tại và mọi người sẽ biết đến bạn. Ứng dụng phục vụ tốt nhất cho các reviewer. Đang được phát triển trên Zalo Mini App",
+    "key": "cakeky",
+    "description": "Ứng dụng thương mại điện tử chuyên về các loại bánh. Đem đến giải pháp nhanh gọn trong quy trình mua và bán.",
     "link": "",
     "status": "Developing",
-    "techs": []
+    "techs": ["nodejs", "reactjs"]
   }
 ]

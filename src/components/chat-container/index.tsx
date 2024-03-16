@@ -79,7 +79,7 @@ export default function ChatContainer() {
           <div className="absolute bottom-0 w-full flex gap-3 items-center p-2">
             <input
               type="text"
-              className="w-full rounded-md border-gray-200"
+              className="w-full rounded-md border-gray-200 !text-black"
               placeholder="Câu hỏi của bạn"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
