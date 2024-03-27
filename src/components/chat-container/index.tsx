@@ -21,6 +21,8 @@ export default function ChatContainer() {
   const [loading, setLoading] = useState(false);
 
   function handleSubmitMessage(message: string) {
+    toast.error("Chức năng đang bảo trì");
+    return;
     const trimmedMessage = message.trim();
     if (trimmedMessage) {
       handleAddMessageIntoConversation(trimmedMessage, "human", "messages");
@@ -42,7 +44,6 @@ export default function ChatContainer() {
         handleAddMessageIntoConversation(answer.text, "ai", "histories");
       }
     } catch (error) {
-      console.log(error);
       toast.error("Đã xãy ra sự cố gì đó, vui lòng thông cảm ạ!");
     } finally {
       setLoading(false);

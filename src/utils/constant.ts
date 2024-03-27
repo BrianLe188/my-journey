@@ -10,6 +10,11 @@ export const firstAssistantMessage: Message[] = [
   {
     _id: "the_second_message",
     type: "ai",
+    message: "Tôi được phát triển bằng công nghệ Pinecone và GPT-3.5.",
+  },
+  {
+    _id: "the_thirt_message",
+    type: "ai",
     message: `<p>Ví du:</p><ul><li>- Bạn hãy giới thiệu một chút về bản thân?</li><li>- Bạn có bao nhiêu năm kinh nghiệm rồi?</li><li>- Những dự án mà bạn đã và đang làm là gì?</li></ul>`,
   },
 ];
@@ -68,6 +73,7 @@ export const CV = {
         "Meeting and communicating with customers.",
         "Write API documentation for members.",
         "Mentor for a group of 3 interns.",
+        "Build npm package for the projects",
       ],
       projects: [
         {

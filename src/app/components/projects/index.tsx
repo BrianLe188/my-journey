@@ -70,6 +70,9 @@ export default function Projects() {
               </div>
             </div>
           ))}
+          <div className="flex items-center justify-center">
+            <p>Đang cập nhật thêm</p>
+          </div>
         </div>
       </div>
     </section>

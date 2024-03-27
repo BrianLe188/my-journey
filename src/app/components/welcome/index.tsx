@@ -18,8 +18,8 @@ export default function Welcome() {
               </h1>
               <h2 className="font-semibold text-4xl">{MY_ROLE}</h2>
               <p className="mt-2">
-                Một developer với đam mê ghi lại và chia sẽ quá trình của các dự
-                án
+                Một developer với đam mê ghi lại và chia sẽ quá trình mà mình
+                tiếp cận với các dự án.
               </p>
               <div className="flex gap-3 mt-5">
                 <a
